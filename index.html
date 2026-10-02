@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Command Center Gmail</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1a1a1a; --muted:#5a5a5a; --bg:#fcfcfa; --line:#e3e3df; --accent:#9a5b3d; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e8e6e1; --muted:#a3a09a; --bg:#17171a; --line:#2e2e33; --accent:#d08a63; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.65 ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width:40rem; margin:0 auto; padding:4rem 1.5rem 6rem; }
+  h1 { font-size:1.9rem; line-height:1.2; margin:0 0 .4rem; letter-spacing:-.02em; }
+  .sub { color:var(--muted); margin:0 0 2.5rem; }
+  h2 { font-size:1.05rem; margin:2.5rem 0 .6rem; letter-spacing:-.01em; }
+  p { margin:0 0 1rem; }
+  ul { margin:0 0 1rem; padding-left:1.2rem; }
+  li { margin:.3rem 0; }
+  a { color:var(--accent); }
+  .note { border-left:2px solid var(--line); padding-left:1rem; color:var(--muted); font-size:.94rem; }
+  footer { margin-top:3.5rem; padding-top:1.5rem; border-top:1px solid var(--line);
+           color:var(--muted); font-size:.88rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Command Center Gmail</h1>
+  <p class="sub">A personal tool that files email into project notes.</p>
+
+  <p>Command Center is a set of local dashboards I run on my own Mac to manage a handful
+  of projects. This page exists because one part of it reads my Gmail, and Google requires
+  any application requesting Gmail access to publish a homepage and a privacy policy.</p>
+
+  <h2>What it does</h2>
+  <p>Every couple of minutes it checks my inbox for unread mail. For each new message it
+  works out which project the mail relates to, writes a short summary into that project's
+  notes file on my computer, and marks the message as read. Mail that doesn't match a
+  project is marked read and ignored.</p>
+
+  <h2>Who it is for</h2>
+  <p>One person — me. It runs on <code>localhost</code>, is not distributed, has no sign-up,
+  and no one else can use it. It is published in Google's console only because an
+  application that touches Gmail has to be, even when its only user is its author.</p>
+
+  <h2>Where the data goes</h2>
+  <ul>
+    <li>Email content is summarised, and the summaries are stored as files on my own machine.</li>
+    <li>Message text is sent to Anthropic's API to produce those summaries.</li>
+    <li>Nothing is published, sold, shared, or sent anywhere else.</li>
+  </ul>
+
+  <p class="note">Full detail is in the <a href="privacy.html">privacy policy</a>.</p>
+
+  <footer>
+    Personal project · not affiliated with Google or Anthropic ·
+    <a href="privacy.html">Privacy policy</a>
+  </footer>
+</div>
+</body>
+</html>

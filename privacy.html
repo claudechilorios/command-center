@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — Command Center Gmail</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1a1a1a; --muted:#5a5a5a; --bg:#fcfcfa; --line:#e3e3df; --accent:#9a5b3d; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e8e6e1; --muted:#a3a09a; --bg:#17171a; --line:#2e2e33; --accent:#d08a63; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.65 ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width:40rem; margin:0 auto; padding:4rem 1.5rem 6rem; }
+  h1 { font-size:1.7rem; margin:0 0 .3rem; letter-spacing:-.02em; }
+  .sub { color:var(--muted); margin:0 0 2.5rem; font-size:.94rem; }
+  h2 { font-size:1.02rem; margin:2.3rem 0 .6rem; letter-spacing:-.01em; }
+  p { margin:0 0 1rem; }
+  ul { margin:0 0 1rem; padding-left:1.2rem; }
+  li { margin:.35rem 0; }
+  a { color:var(--accent); }
+  code { font-size:.9em; background:color-mix(in srgb, var(--fg) 7%, transparent);
+         padding:.1em .35em; border-radius:3px; }
+  footer { margin-top:3.5rem; padding-top:1.5rem; border-top:1px solid var(--line);
+           color:var(--muted); font-size:.88rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Privacy Policy</h1>
+  <p class="sub">Command Center Gmail · last updated 2 October 2026</p>
+
+  <p>Command Center Gmail is a personal tool run by one person on their own computer.
+  It has a single user, who is also its author. There are no accounts, no sign-up, and
+  no way for anyone else to use it.</p>
+
+  <h2>What it accesses</h2>
+  <p>With the <code>gmail.modify</code> permission, and only against the account that
+  authorised it, the tool:</p>
+  <ul>
+    <li>lists unread messages in the inbox;</li>
+    <li>reads the sender, subject, and body of those messages;</li>
+    <li>extracts text from attachments where they contain text;</li>
+    <li>marks messages as read once handled.</li>
+  </ul>
+  <p>It does not send mail, delete mail, or touch anything outside the inbox.</p>
+
+  <h2>What it does with it</h2>
+  <p>Message text is sent to Anthropic's API to produce a short summary and decide which
+  project the mail belongs to. That summary is written to a notes file on the author's own
+  computer. The identifiers of handled messages are stored locally so the same mail is not
+  processed twice.</p>
+
+  <h2>Where it is stored</h2>
+  <p>Summaries and message identifiers are stored as ordinary files on the author's
+  personal machine. No database, no server, no cloud storage. Nothing is uploaded anywhere
+  except the API call described above.</p>
+
+  <h2>Who else sees it</h2>
+  <p>Anthropic processes message text to generate summaries, under their own terms. Beyond
+  that, nothing is shared, sold, published, or disclosed to anyone. There are no analytics,
+  no trackers, and no advertising.</p>
+
+  <h2>How long it is kept</h2>
+  <p>Summaries stay in local files until the author deletes them. Because everything lives
+  on one personal machine, deleting those files removes the data entirely.</p>
+
+  <h2>Withdrawing access</h2>
+  <p>Access can be revoked at any time from
+  <a href="https://myaccount.google.com/permissions">Google Account permissions</a>.
+  Revoking it stops all access immediately.</p>
+
+  <h2>Limited Use</h2>
+  <p>This application's use of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+  User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Contact</h2>
+  <p>claudechilorios@gmail.com</p>
+
+  <footer><a href="index.html">← Back</a></footer>
+</div>
+</body>
+</html>
