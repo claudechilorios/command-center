@@ -29,22 +29,23 @@
 <body>
 <div class="wrap">
   <h1>Privacy Policy</h1>
-  <p class="sub">Command Center Gmail · last updated 2 October 2026</p>
+  <p class="sub">Command Center Gmail · last updated 2 October 2026 (rev. 2 — reduced to read-only access)</p>
 
   <p>Command Center Gmail is a personal tool run by one person on their own computer.
   It has a single user, who is also its author. There are no accounts, no sign-up, and
   no way for anyone else to use it.</p>
 
   <h2>What it accesses</h2>
-  <p>With the <code>gmail.modify</code> permission, and only against the account that
+  <p>With the <code>gmail.readonly</code> permission, and only against the account that
   authorised it, the tool:</p>
   <ul>
     <li>lists unread messages in the inbox;</li>
     <li>reads the sender, subject, and body of those messages;</li>
-    <li>extracts text from attachments where they contain text;</li>
-    <li>marks messages as read once handled.</li>
+    <li>extracts text from attachments where they contain text.</li>
   </ul>
-  <p>It does not send mail, delete mail, or touch anything outside the inbox.</p>
+  <p><strong>It cannot change anything.</strong> The permission it holds is read-only, so it
+  cannot send, delete, label, archive, or mark mail as read — not by design choice, but
+  because Google will not permit it under this grant. Mail is left exactly as found.</p>
 
   <h2>What it does with it</h2>
   <p>Message text is sent to Anthropic's API to produce a short summary and decide which
