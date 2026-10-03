@@ -1,0 +1,12 @@
+# This repo is public. Nothing secret may ever land here.
+.env
+*.env
+.env.*
+credentials.json
+client_secret*.json
+token.json
+service-account*.json
+*.pem
+*.key
+*.p12
+.DS_Store
